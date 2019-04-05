@@ -1,0 +1,536 @@
+*
+{
+    box-sizing: border-box;
+    font-family: "Arial" sans-serif;
+    margin: 0;
+    border: 0;
+}
+body
+{
+    max-width: auto;
+    min-height: 100px;
+
+}
+div.wrapper
+{
+    margin: 0px;
+    height: 100%;
+    background-color: forestgreen;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.bar
+{
+    flex: 1;
+    flex-basis: 30%;
+    background-color: #128c7e;
+    max-height: 50px;
+    height: 30px;
+    display: flex;
+    flex-shrink: 2;
+}
+div.head
+{
+    flex: 2;
+    width: 20%;
+    max-height: 20px;
+    height: 15px;
+    margin: 5px;
+}
+.head h5
+{
+    margin-top: -1%;
+    color: white;
+    font-size: 15px;
+    
+}
+
+div.icon
+{
+    flex: 1;
+    margin-top: 4px;
+    margin-left: 80.3%;
+    max-height: 20px;
+    height: 20px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.icon img
+{
+    width: 12%;
+    margin-left: 7%;
+}
+div.part2
+{   
+    
+    flex: 1;
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: row;
+    background-color: #FCFEFB;
+}
+/*styling of left hand side*/
+div.left
+{
+    background-color:#ece5dd;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+div.nav
+{
+    background-color:#ece5dd;
+    flex: 1;
+    padding: 2%;
+    margin: 1%;
+}
+.nav img:nth-child(1)
+{
+    border-radius: 100%;
+    width: 10%;
+}
+.nav img:nth-child(2)
+{
+    border-radius: 100%;
+    width: 10%;
+    margin-left: 55%;
+}
+.nav img:nth-child(3)
+{
+    width: 10%;
+}
+.nav img:nth-child(4)
+{
+    width: 10%;
+}
+
+div.search
+{
+    background-color:#fffafa;
+    flex: 1;
+    padding: 3%;
+}
+.search input
+{
+    border-radius: 15px;
+    width: 100%;
+    height: 35px;
+    padding: 2%;
+    background-image:url("698627-icon-111-search-512.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position:11px 5px;
+}
+.search input::placeholder
+{
+    text-align: center;
+    color: silver;
+}
+div.chats
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 490px;
+    overflow-y: scroll;
+    flex-shrink:0;
+
+}
+div.log
+{
+
+    background-color: aliceblue;
+    display: flex;
+    min-height: max-content;
+    background-color: white;
+}
+.img
+{
+    flex: 1;
+    background-color: fuchsia;
+    padding: 2%;
+    height:auto;
+    background-color: white;
+}
+
+.img img 
+{
+    width: 62px;
+    border-radius: 100%;
+    margin-top:-1%;
+    margin-left: 6%;
+}
+
+
+.c1 h6
+{
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: -7%;;
+}
+.c1 #p 
+{
+    display: inline;
+    float: right;
+    margin-top: 6.6%;
+    font-size: 13px;
+    color: grey;
+}
+.c1 #p1
+{
+    margin-left: 2%;
+    margin-top: 1%;
+    color: grey;
+}
+.c1
+{
+    flex: 3.5;
+    background-color: brown;
+    height:auto;
+    padding-right: 2%;
+    border-bottom-color: silver;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    background-color: white;
+}
+
+.c1 img
+{
+    display:inline;
+    width: 17px;
+    margin-top: 14.75%;
+    float: left;
+}
+
+div.right
+{
+/*    background-color: deeppink;*/
+   flex-shrink: 2;
+    flex: 2.3;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#FCFEFB;
+    height: 490px;   
+}
+div.rightimg
+{
+    background-color: #FCFEFB;
+    height: auto;
+    width: 45%;
+    margin-left: 2%;
+    margin-top: 10%;
+}
+.rightimg img
+{
+    width: 250px;
+    border-radius: 100%;
+    margin-left: 20%;
+}
+div.text
+{
+    font-family: "Arial" ,sans-serif;
+    background-color: #FCFEFB;
+    text-align: center;
+    width: 55%;
+    color: grey;
+}
+.text p:nth-child(1)
+{
+    font-size: 30px;
+    font-weight:1vw;
+}
+div.footer
+{
+    background-color: greenyellow;
+    width: 105%;
+    margin-top: 17%;
+    height: 3px;
+}
+div.mob_wrap
+{
+    display: none;
+}
+@media screen and (max-width: 1126px)
+{
+    .wrapper
+    {
+        overflow: hidden;
+    }
+    .c1 #p
+    {
+        clear: both;
+        margin-top: 7.5%;
+    }
+    .c1 img{
+        margin-top: 18.5%;
+    }
+    .rightimg img
+    {
+        margin-left: 18%;
+    }
+    .log
+    {
+        width: 100%;
+    }
+    div.text
+    {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1075px)
+{
+    .left
+    {
+        flex: 2;
+    }
+    .right
+    {
+        flex: 2;
+    }
+    div.text
+    {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 900px)
+{
+    .rightimg img
+    {
+        width: 250px;
+        margin-left: 10%;
+    }
+    div.text
+    {
+        width: 80%;
+    }
+    .img img
+    {
+        width: 42px;
+    }
+}
+@media screen and (max-width:875px)
+{
+    div.nav img
+    {
+        width: 8%;
+        margin-left: -2%;
+    }
+}
+@media screen and (max-width:847px)
+{
+    div.c1 h6
+    {
+        font-size: 17px;
+    }
+    .c1 img
+    {
+        width: 14px;
+        margin-top: 20%;
+    }
+    .c1 #p1
+    {
+        font-size: 12px;
+    }
+    .c1 #p
+    {
+        font-size: 10px;
+    }
+    .search input::placeholder
+    {
+        text-align: right;
+    }
+}
+@media screen and (max-width:700px) 
+{
+    div.mob_wrap
+    {
+        display: flex;
+        background-color: #075e54;
+        position: fixed;
+        top: 0;
+        width: 100%;
+/*     margin-top: -86%;*/
+    }
+    div.mob_head
+    {
+        flex: 1;
+        background-color:#075e54;
+        display:flex;
+        flex-direction: column;
+    }
+    div.heading 
+    {
+        flex:1 ;
+        display: flex;
+        background-color: #075e54;
+        flex-direction: row;
+    }
+    div.h
+    {
+        flex-grow: 14;
+        font-family: "Ariel" ,sans-serif;
+        color: white;
+        font-size: 20px;
+        padding: 3%;
+    }
+    div.img1
+    {
+        background-color: #075e54;
+        flex: 1;
+        
+    }
+    div.img1 img
+    {
+        width: 25px;
+        float: right;
+        padding: 1%;
+        margin-top: 35%;
+    }
+    div.img2
+    {
+        flex: 1;
+        background-color:#075e54;
+    }
+     div.img2 img
+    {
+        width: 40px;
+        float: right;
+        margin-top: 20%;
+    }
+    div.nav1
+    {
+        font-family: "Ariel" ,sans-serif;
+        background-color:#075e54;
+        padding-top: 3%;
+        display: flex;
+        justify-content: space-between;
+    }
+    div.cam
+    {
+        background-color:#075e54;
+        width: 5%;
+        padding-left: 0.5%;
+    }
+    div.cam img
+    {
+        width: 30px;
+    }
+    div.c
+    {
+        background-color:#075e54;
+        flex: 3;
+        text-align: center;
+        color: white;
+    }
+    div.white
+    {
+        width: 100%;
+        height: 12%;
+        background-color:white;
+        margin-top: -0.4%;
+    }
+    div.s
+    {
+        background-color:#075e54;
+        flex: 3;
+        text-align: center;
+        color: rgba(255,255,255,0.5);
+    }
+    div.calls
+    {
+        background-color:#075e54;
+        flex: 3;
+        text-align: center;
+        color: rgba(255,255,255,0.5);
+    }
+    div.c1
+    {
+        margin-left: -2%;
+    }
+    div.c1 h6
+    {
+        font-size: 24px;
+    }
+    .c1 img
+    {
+        width: 18px;
+        margin-top: 11.5%;
+        margin-left: -7%;
+    }
+    .c1 #p1
+    {
+        font-size: 19px;
+        margin-left: -7%;
+    }
+    .c1 #p
+    {
+        font-size: 12px;
+    }
+    .img img
+    {
+        width: 53%;
+    }
+    div.bar
+    {
+        display: none;
+    }
+    div.nav
+    {
+        display: none;
+    }
+    div.search
+    {
+        display: none;
+    }
+    div.part2 div.right
+    {
+        display: none;
+    }
+    div.wrapper
+    {
+        margin-top:16%;
+    }
+}
+@media screen and (max-width:600px)
+{
+    .c1 img
+    {
+        width: 16px;
+        margin-top: 13%;
+    }
+}
+@media screen and (max-width:480px) 
+{
+    .c1 img
+    {
+        width: 16px;
+        margin-top: 15%;
+    }
+}
+@media screen and (max-width:380px)
+{
+    .c1 img
+    {
+        width: 15px;
+        margin-top: 14.5%;
+    }
+    div.c1 h6
+    {
+        font-size: 18px;
+    }
+    div.c1 #p1
+    {
+        font-size: 14px;
+    }
+    div.nav1 p
+    {
+        font-size: 15px;
+    }
+}
